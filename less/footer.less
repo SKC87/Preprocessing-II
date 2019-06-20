@@ -10,3 +10,20 @@
     padding: 20px;
   }
 }
+
+.btn-container {
+  .center();
+  .bordered;
+}
+
+@btn-color:teal;
+@btn-height: 50px;
+
+.center-parametric(@color: @btn-color, @height: @btn-height, @font-color:teal) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @color;
+  height: @height;
+  color: @font-color;
+}
